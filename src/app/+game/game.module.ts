@@ -8,12 +8,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { routes } from './game.routes';
-import { GameComponent } from './game.component';
+import { GameCenterComponent } from './game-center.component';
 
 @NgModule({
     declarations: [
         // Components / Directives/ Pipes
-        GameComponent,
+        GameCenterComponent,
     ],
     imports: [
         CommonModule,

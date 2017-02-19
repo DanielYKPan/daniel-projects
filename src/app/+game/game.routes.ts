@@ -2,13 +2,13 @@
  * game.routes
  */
 
-import { GameComponent } from './game.component';
+import { GameCenterComponent } from './game-center.component';
 
 export const routes = [
     {
         path: '',
         children: [
-            {path: '', component: GameComponent},
+            {path: '', component: GameCenterComponent},
         ]
     },
 ];
