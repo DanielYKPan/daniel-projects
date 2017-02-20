@@ -1,0 +1,6 @@
+<div class="tile-cell tile-{{tile.value}}">
+    <div class="tile-inner"
+         [@mergedState]="tile.merged ? 'merged' : 'unmerged'">
+        <span class="tile-value">{{tile.value}}</span>
+    </div>
+</div>

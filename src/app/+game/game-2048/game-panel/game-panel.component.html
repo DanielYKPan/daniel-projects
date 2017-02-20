@@ -1,0 +1,29 @@
+<div class="game-wrapper"
+     (swipeleft)="clickKeyBoard(37)"
+     (swipeup)="clickKeyBoard(38)"
+     (swiperight)="clickKeyBoard(39)"
+     (swipedown)="clickKeyBoard(40)">
+    <section class="game-panel">
+        <div #board class="board" (window:keydown)="clickKeyBoard($event.keyCode)">
+            <div class="game-board game-4-board">
+                <div class="grid-board">
+                    <app-game-cell *ngFor="let item of grid;" [gameState]="gameState"></app-game-cell>
+                </div>
+                <div class="tile-board">
+                    <game-tile-cell *ngFor="let tile of tiles; trackBy: trackByFn"
+                                    class="tile-cell position-{{tile.coordination.x}}-{{tile.coordination.y}}"
+                                    [class.is-merged]="tile.merged"
+                                    [tile]="tile" [gameState]="gameState"></game-tile-cell>
+                </div>
+            </div>
+            <div class="game-board game-over-board" *ngIf="gameState.gameOver">
+                <game-over-board (restartBtnClick)="newGame()"></game-over-board>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-message" [class.show]="gameState.gameWon">
+        Congratulations! You have made a 2048 tile! Continue to make 4096, 8192...
+    </section>
+</div>
+<app-game-score [scores]="gameState.scores" [best]="gameState.highScores"></app-game-score>

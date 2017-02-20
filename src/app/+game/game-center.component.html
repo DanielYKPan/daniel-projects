@@ -3,7 +3,11 @@
     <ul class="game-menu">
         <li class="game" *ngFor="let game of games">
             <img class="image" src="assets/img/game/{{game.img}}">
-            <span class="name" [ngStyle]="{'color': game.color}">{{game.name}}</span>
+            <span class="name"
+                  [ngStyle]="{'color': game.color}"
+                  [routerLink]="[game.slug]">
+                {{game.name}}
+            </span>
         </li>
     </ul>
 </div>

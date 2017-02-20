@@ -1,0 +1,68 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+:host {
+  display: flex;
+  flex: 1;
+  color: $text-color;
+}
+
+.about-wrapper {
+  display: flex;
+  align-content: space-around;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 95%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo-title {
+    @include type-setting(4);
+    font-family: 'Bungee Outline', cursive;
+    margin: 0;
+  }
+
+  .logo-img {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.about-body {
+  width: 100%;
+  max-width: 440px;
+}
+
+p {
+  @include type-setting(0);
+
+  @include respond-to(medium) {
+    @include type-setting(1);
+  }
+  font-family: cursive;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: $base-line-height 1rem;
+  width: 100%;
+}

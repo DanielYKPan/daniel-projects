@@ -20,6 +20,9 @@ import { AppComponent } from './app.component';
 import { AppState, InternalStateType } from './app.service';
 import { NoContentComponent } from './no-content';
 
+/* HammerJS */
+import 'hammerjs';
+
 /* Basic styles */
 import '../styles/main.scss';
 

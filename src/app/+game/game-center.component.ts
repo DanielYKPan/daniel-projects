@@ -13,11 +13,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameCenterComponent implements OnInit {
 
-    games: any = [
-        {name: '2048', slug: 'game-2048', img: '2048/game-2048.png', color: '#f5b600'},
-        {name: 'Minesweeper', slug: 'minesweeper', img: 'minesweeper/bomb_green.png', color: '#43d000'},
-        {name: 'Trivia Quiz', slug: 'quiz', img: 'quiz/quiz-logo.png', color: '#ec6e1a'},
-        {name: 'Puzzle', slug: 'puzzle', img: 'puzzle/puzzle-logo.png', color: '#5506ff'},
+    public games: any = [
+        {
+            name: '2048',
+            slug: '2048',
+            img: '2048/logo-1.png',
+            color: '#f5b600'
+        },
+        {
+            name: 'Minesweeper',
+            slug: 'minesweeper',
+            img: 'minesweeper/bomb_green.png',
+            color: '#43d000'
+        },
+        {
+            name: 'Trivia Quiz',
+            slug: 'quiz',
+            img: 'quiz/quiz-logo.png',
+            color: '#ec6e1a'
+        },
+        {
+            name: 'Puzzle',
+            slug: 'puzzle',
+            img: 'puzzle/puzzle-logo.png',
+            color: '#5506ff'
+        },
     ];
 
     constructor() {

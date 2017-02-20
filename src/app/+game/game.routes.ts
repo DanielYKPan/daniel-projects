@@ -9,6 +9,7 @@ export const routes = [
         path: '',
         children: [
             {path: '', component: GameCenterComponent},
+            {path: '2048', loadChildren: './game-2048#GameModule'},
         ]
     },
 ];

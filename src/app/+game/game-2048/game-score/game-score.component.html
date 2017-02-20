@@ -1,0 +1,25 @@
+<div class="game-score" [@panelState]="'true'">
+    <div class="bg"></div>
+    <div class="score-board">
+        <div class="score-bum">
+            <div class="score">
+            <span class="increase"
+                  *ngFor="let s of increasedScores"
+                  [@scoreIncreasedState]="s.state"
+                  (@scoreIncreasedState.done)="animationDone($event)">+ {{s.value}}</span>
+                <span class="total">{{scores}}</span>
+            </div>
+        </div>
+
+        <div class="score-bum">
+            <div class="score best">
+                <span class="total">{{best}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-board">
+        <h4>Score</h4>
+        <h4>Best</h4>
+    </div>
+</div>
