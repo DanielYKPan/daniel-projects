@@ -32,7 +32,6 @@ export class QuizPointComponent implements OnInit, OnDestroy {
         this.achievementEventSub = this.achievementEventService.achievementEvent.subscribe(
             ( data ) => {
                 this.totalPoints = this.pointService.getTotalPoints();
-                console.log(this.totalPoints);
             }
         );
     }

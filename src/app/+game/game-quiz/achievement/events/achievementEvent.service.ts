@@ -77,7 +77,7 @@ export class AchievementEventService {
         let currentThemeProfile = profile.themeProfiles.find(
             ( themeProfile ) => themeProfile.theme.kind === theme.kind
         );
-        if (currentThemeProfile === null) {
+        if (currentThemeProfile == null) {
             let themeProfile = new ThemeProfile(theme);
             profile.themeProfiles.push(themeProfile);
             return themeProfile;

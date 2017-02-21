@@ -22,7 +22,7 @@ export class PointService {
 
     public isBuyable( booster: IBooster ): boolean {
         let points = this.profileService.getProfile().points;
-        return points - booster.cost > 0;
+        return points - booster.cost >= 0;
     }
 
     public onBoosterBought( booster: IBooster ): void {

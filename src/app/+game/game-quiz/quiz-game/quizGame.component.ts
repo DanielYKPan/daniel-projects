@@ -92,7 +92,7 @@ export class QuizGameComponent implements OnInit, OnDestroy {
             } else {
                 this.eventService.completedEvent.emit(this.status);
                 this.quizService.Status = this.status;
-                this.router.navigate(['/game/end']);
+                this.router.navigate(['../../end'], {relativeTo: this.route});
             }
         }, 2000);
     }
