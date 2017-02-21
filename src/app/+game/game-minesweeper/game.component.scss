@@ -73,15 +73,23 @@
   width: 100%;
 }
 
-.game-logo {
+.game-inform {
+  display: flex;
+  align-items: flex-end;
   position: absolute;
-  left: 1rem;
   bottom: 1rem;
-  max-width: 150px;
-  width: 30%;
+  width: 100%;
+  padding: 0 1rem;
 
-  img {
-    width: 100%;
+  .game-logo {
+    width: 30%;
+    max-width: 150px;
     height: auto;
+  }
+
+  .center-btn {
+    width: 60px;
+    height: 60px;
+    margin-left: 1rem;
   }
 }
