@@ -22,6 +22,7 @@ import { GameScoreComponent } from './game-score';
 import { GamePanelComponent } from './game-panel';
 import { GameAboutComponent, SocialBtnComponent } from './game-about';
 import { MyHammerConfig } from './hammer.config';
+import { CenterBtnComponent } from '../center-btn.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,8 @@ import { MyHammerConfig } from './hammer.config';
         GameGridCellComponent,
         GameTileCellComponent,
         GameOverBoardComponent,
+
+        CenterBtnComponent,
     ],
     imports: [
         CommonModule,

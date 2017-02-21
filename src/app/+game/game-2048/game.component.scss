@@ -6,3 +6,11 @@
   flex: 1;
   background: $mid-grey resolve('img/game/2048/background-1.png') repeat;
 }
+
+.center-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+}
