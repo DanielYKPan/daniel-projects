@@ -22,7 +22,7 @@ import { GameScoreComponent } from './game-score';
 import { GamePanelComponent } from './game-panel';
 import { GameAboutComponent, SocialBtnComponent } from './game-about';
 import { MyHammerConfig } from './hammer.config';
-import { CenterBtnComponent } from '../center-btn.component';
+import { GameSharedModule } from '../shared';
 
 @NgModule({
     declarations: [
@@ -36,12 +36,9 @@ import { CenterBtnComponent } from '../center-btn.component';
         GameGridCellComponent,
         GameTileCellComponent,
         GameOverBoardComponent,
-
-        CenterBtnComponent,
     ],
     imports: [
-        CommonModule,
-        FormsModule,
+        GameSharedModule,
         RouterModule.forChild(routes),
         StoreModule.provideStore({
             tiles: tilesReducer,

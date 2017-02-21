@@ -1,5 +1,5 @@
 /**
- * movie.module
+ * game.module
  */
 
 import { CommonModule } from '@angular/common';
