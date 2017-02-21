@@ -1,0 +1,11 @@
+<div class="chooser-wrapper">
+    <div class="container">
+        <h1 class="heading">choose a theme</h1>
+        <div class="cards">
+            <div class="card {{theme.color}}" *ngFor="let theme of themes">
+                <h2 class="header">{{theme.name}}</h2>
+                <div class="description" [routerLink]="['./', theme.code]">Go »</div>
+            </div>
+        </div>
+    </div>
+</div>

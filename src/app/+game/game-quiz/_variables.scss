@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Exo+2|Frijole");
+
+$header-font: 'Bungee', cursive, sans-serif;
+
+$violet-color: #6435c9;
+$pink-color: #e03997;
+$teal-color: #00b5ad;
+$yellow-color: #fbbd08;
+$blue-color: #2185d0;
+$purple-color: #a333c8;
+$olive-color: #b5cc18;
+$red-color: #db2828;
+$green-color: #21ba45;
+$orange-color: #f2711c;
+$theme-colors: (
+        'violet': $violet-color,
+        'pink': $pink-color,
+        'teal': $teal-color,
+        'yellow': $yellow-color,
+        'blue': $blue-color,
+        'purple': $purple-color,
+        'olive': $olive-color,
+        'red': $red-color,
+        'green': $green-color,
+        'orange': $orange-color
+);
+
+$theme-btn-colors: (
+        'violet': #b5cc18,
+        'pink': #16ab39,
+        'teal': #d01919,
+        'yellow': #1678c2,
+        'blue': #eaae00,
+        'purple': #f26202,
+        'olive': #5829bb,
+        'red': #009c95,
+        'green': #e61a8d,
+        'orange': #9627ba
+);

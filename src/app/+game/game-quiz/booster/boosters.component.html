@@ -1,0 +1,12 @@
+<div class="booster-wrapper">
+    <h1 class="heading">BOOSTERS</h1>
+    <div class="boosters">
+        <div class="booster-detail" *ngFor="let booster of boosters | async">
+            <div class="button" (click)="payForBooster(booster)">{{booster.description}}</div>
+            <div class="inform">
+                <span class="text">{{booster.cost}}</span>
+                <img class="image" src="assets/img/game/quiz/expensive.png">
+            </div>
+        </div>
+    </div>
+</div>

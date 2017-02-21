@@ -1,0 +1,36 @@
+@import '../../../../styles/utils/variables';
+
+.progress {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  border: none;
+  background: rgba(0,0,0,.1);
+  border-radius: .3rem;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  height: $base-line-height * 2;
+  border-radius: .3rem;
+  background-color: #888;
+  transition: width 100ms ease, background-color 2000ms ease;
+
+  &.warning {
+    background-color: #f2c037;
+  }
+
+  &.urgent {
+    background-color: #a62626;
+  }
+}
+
+.seconds {
+  position: absolute;
+  top:50%;
+  left: auto;
+  bottom: auto;
+  right: -1.5rem;
+  transform: translateY(-50%);
+}

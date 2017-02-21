@@ -5,7 +5,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-game',
+    selector: 'app-game-puzzle',
     templateUrl: 'game.component.html',
     styleUrls: ['./game.component.scss']
 })

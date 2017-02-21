@@ -1,0 +1,23 @@
+<div class="achievement">
+    <div class="container">
+        <h3 class="heading">AVAILABLE ACHIEVEMENTS</h3>
+        <div class="link">
+            <button class="btn" [routerLink]="['../']">Back to Quizle</button>
+        </div>
+        <div class="bums">
+            <div class="bum" *ngFor="let achievement of achievements" [class.gained]="achievement.gained">
+                <div class="image">
+                    <img src="assets/img/game/quiz/{{achievement?.img}}.png">
+                </div>
+                <div class="content">
+                    <div class="header">
+                        <span *ngIf="achievement.gained">{{achievement.name}} </span>
+                        <span *ngIf="!achievement.gained">???</span>
+                        (+{{achievement.points}})
+                    </div>
+                    <div class="sub-header">{{achievement.description}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

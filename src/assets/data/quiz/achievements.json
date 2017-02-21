@@ -1,0 +1,268 @@
+[
+  {
+    "key": "firstGame",
+    "img": "game1",
+    "name": "Finish your 1st game",
+    "description": "Good job! You just finished your first game.",
+    "points": 5
+  },
+  {
+    "key": "fiftyGames",
+    "img": "game50",
+    "name": "Finish 50 games",
+    "description": "You're getting the hang of this.",
+    "points": 10
+  },
+  {
+    "key": "hundredGames",
+    "img": "game100",
+    "name": "Finish 100 games",
+    "description": "Holy guacomole, you played a hundred games already?!",
+    "points": 20
+  },
+  {
+    "key": "tenConsecutivelyCorrectAnswers",
+    "img": "combo10",
+    "name": "C-C-C-C-Combo Maker! #10",
+    "description": "You awesome person you! You answered 10 consecutive questions correctly.",
+    "points": 5
+  },
+  {
+    "key": "twentyfiveConsecutivelyCorrectAnswers",
+    "img": "combo25",
+    "name": "C-C-C-C-Combo Maker! #25",
+    "description": "Amazeballs! You answered 25 consecutive questions correctly.",
+    "points": 25
+  },
+  {
+    "key": "fiftyConsecutivelyCorrectAnswers",
+    "img": "combo50",
+    "name": "C-C-C-C-Combo Maker! #50",
+    "description": "Barney: It's going to be legen-- wait for it-- and I hope you're not lactose intolerant, because the second half of the word is-- dary! Legendary! You answered 50 consecutive questions correctly",
+    "points": 50
+  },
+  {
+    "key": "animals100Questions",
+    "img": "animals",
+    "name": "Answer 100 questions about animals correctly",
+    "description": "You're such an animal lover!",
+    "points": 10
+  },
+  {
+    "key": "brain-teasers100Questions",
+    "img": "brainteasers",
+    "name": "Answer 100 brain-teasers correctly",
+    "description": "Wow, what a whizzkid!",
+    "points": 10
+  },
+  {
+    "key": "entertainment100Questions",
+    "img": "entertainment",
+    "name": "Answer 100 questions about entertainment correctly",
+    "description": "Such an entertainer",
+    "points": 10
+  },
+  {
+    "key": "general100Questions",
+    "img": "general",
+    "name": "Answer 100 general questions correctly",
+    "description": "Good job!",
+    "points": 10
+  },
+  {
+    "key": "kids100Questions",
+    "img": "kids",
+    "name": "Answer 100 questions for kids correctly",
+    "description": "You'll only get smarter, keep it up!",
+    "points": 10
+  },
+  {
+    "key": "literature100Questions",
+    "img": "literature",
+    "name": "Answer 100 questions about literature correctly",
+    "description": "Keep it up, bookworm",
+    "points": 10
+  },
+  {
+    "key": "movies100Questions",
+    "img": "movies",
+    "name": "Answer 100 questions about movies correctly",
+    "description": "Did you Netflix & chill a lot?",
+    "points": 10
+  },
+  {
+    "key": "science100Questions",
+    "img": "science",
+    "name": "Answer 100 questions about science correctly",
+    "description": "Don't let it go boom!",
+    "points": 10
+  },
+  {
+    "key": "sports100Questions",
+    "img": "sports",
+    "name": "Answer 100 questions about sports correctly",
+    "description": "You seem to be a sportive person",
+    "points": 10
+  },
+  {
+    "key": "videogames100Questions",
+    "img": "videogames",
+    "name": "Answer 100 questions about games correctly",
+    "description": "Go out once in a while!",
+    "points": 10
+  },
+  {
+    "key": "animalsMaster",
+    "img": "animals8",
+    "name": "Get 8/10 or more in the Animals quiz",
+    "description": "Zoologist",
+    "points": 20
+  },
+  {
+    "key": "brain-teasersMaster",
+    "img": "brainteasers8",
+    "name": "Get 8/10 or more in the brain teasers quiz",
+    "description": "Did your brains get overheated now?",
+    "points": 20
+  },
+  {
+    "key": "generalMaster",
+    "img": "general8",
+    "name": "Get 8/10 or more in the general quiz",
+    "description": "Generalist",
+    "points": 20
+  },
+  {
+    "key": "entertainmentMaster",
+    "img": "entertainment8",
+    "name": "Get 8/10 or more in the entertainment quiz",
+    "description": "Are you not entertained?",
+    "points": 20
+  },
+  {
+    "key": "kidsMaster",
+    "img": "kids8",
+    "name": "Get 8/10 or more in the kids quiz",
+    "description": "You could be a teacher now!",
+    "points": 20
+  },
+  {
+    "key": "literatureMaster",
+    "img": "literature8",
+    "name": "Get 8/10 or more in the literature quiz",
+    "description": "You're certainly a bookworm",
+    "points": 20
+  },
+  {
+    "key": "moviesMaster",
+    "img": "movies8",
+    "name": "Get 8/10 or more in the movies quiz",
+    "description": "Looks like binge-watching did pay off!",
+    "points": 20
+  },
+  {
+    "key": "scienceMaster",
+    "img": "science8",
+    "name": "Get 8/10 or more in the science quiz",
+    "description": "As smart as Sheldon Cooper",
+    "points": 20
+  },
+  {
+    "key": "sportsMaster",
+    "img": "sports8",
+    "name": "Get 8/10 or more in the sports quiz",
+    "description": "What a sportsman!",
+    "points": 20
+  },
+  {
+    "key": "videogamesMaster",
+    "img": "videogames8",
+    "name": "Get 8/10 or more in the videogames quiz",
+    "description": "LU-LU-LU-LUDICROUS KILL!",
+    "points": 20
+  },
+  {
+    "key": "geek",
+    "img": "geek",
+    "name": "Get 8/10 in the literature, movies, science and videogames quizes",
+    "description": "Played like a real geek!",
+    "points": 50
+  },
+  {
+    "key": "beater",
+    "img": "beater",
+    "name": "Get 8/10 in all quizes",
+    "description": "Beaten the game",
+    "points": 100
+  },
+  {
+    "key": "loser",
+    "img": "loser",
+    "name": "Get at least 20 questions wrong",
+    "description": "At least you win in losing!",
+    "points": 10
+  },
+  {
+    "key": "kindergarten",
+    "img": "hex",
+    "name": "Get less than 5/10 in the kids quiz",
+    "description": "Go back to kindergarten!",
+    "points": 10
+  },
+  {
+    "key": "zeroScore",
+    "img": "zeroScore",
+    "name": "Get 0/10 in any quiz",
+    "description": "Did you even try?",
+    "points": 10
+  },
+  {
+    "key": "oneScore",
+    "img": "oneScore",
+    "name": "Get 1/10 in any quiz",
+    "description": "Better than nothing!",
+    "points": 10
+  },
+  {
+    "key": "newbie",
+    "img": "newbie",
+    "name": "Answer your first answer correctly",
+    "description": "Welcome newbie!",
+    "points": 10
+  },
+  {
+    "key": "fail",
+    "img": "fail",
+    "name": "Get your first wrong answer",
+    "description": "Fail!",
+    "points": 10
+  },
+  {
+    "key": "konami",
+    "img": "hex",
+    "name": "Enter the konami code",
+    "description": "You are the master cheater!",
+    "points": 10
+  },
+  {
+    "key": "dimitri",
+    "img": "hex",
+    "name": "Enter DIMITRI",
+    "description": "Acknowledge your master",
+    "points": 1337
+  },
+  {
+    "key": "sam",
+    "img": "hex",
+    "name": "Enter SAM",
+    "description": "Some say he's still struggling with Angular 2 to this day",
+    "points": 1337
+  },
+  {
+    "key": "verena",
+    "img": "hex",
+    "name": "Enter VERENA",
+    "description": "Without her, this application would look similar to those crappy websites from the 90s",
+    "points": 1337
+  }
+]

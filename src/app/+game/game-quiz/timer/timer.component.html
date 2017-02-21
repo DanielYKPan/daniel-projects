@@ -1,0 +1,8 @@
+<div class="progress">
+    <div class="bar" [ngClass]="{
+            'warning': (timer?.Current < timer?.Max / 2 && timer?.Current > 0),
+            'urgent': (timer?.Current< timer?.Max / 4 && timer?.Current > 0)}"
+         [style.width]="getPercentage()">
+        <div class="seconds">{{getSeconds()}}</div>
+    </div>
+</div>

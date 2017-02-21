@@ -1,0 +1,19 @@
+<div class="achievement">
+    <div class="container">
+        <h3 class="heading">ACHIEVEMENT</h3>
+        <div class="bums">
+            <div class="bum" *ngFor="let achievement of achievements">
+                <div class="image">
+                    <img src="assets/img/game/quiz/{{achievement?.img}}.png">
+                </div>
+                <div class="content">
+                    <div class="header">{{achievement.name}} (+{{achievement.points}})</div>
+                    <div class="sub-header">{{achievement.description}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="link">
+            <button class="btn" [routerLink]="['./achievements']">View All Achievements</button>
+        </div>
+    </div>
+</div>

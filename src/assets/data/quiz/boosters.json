@@ -1,0 +1,14 @@
+[
+  {
+    "cost": 5,
+    "name": "increaseTime",
+    "description": "Increase your time with 5 seconds",
+    "enabled": true
+  },
+  {
+    "cost": 10,
+    "name": "deleteWrongAnswer",
+    "description": "Delete 1 wrong answer",
+    "enabled": true
+  }
+]

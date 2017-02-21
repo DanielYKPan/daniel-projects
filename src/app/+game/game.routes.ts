@@ -12,6 +12,7 @@ export const routes = [
             {path: '2048', loadChildren: './game-2048#GameModule'},
             {path: 'minesweeper', loadChildren: './game-minesweeper#GameModule'},
             {path: 'puzzle', loadChildren: './game-puzzle#GameModule'},
+            {path: 'quiz', loadChildren: './game-quiz#GameModule'},
         ]
     },
 ];

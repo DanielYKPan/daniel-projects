@@ -1,0 +1,12 @@
+<div class="end-wrapper">
+    <div class="masthead">
+        <div class="container">
+            <h1 class="heading">the end</h1>
+            <h5 class="sub-heading" *ngIf="status">your score: {{status.correct}}/{{status.total}}</h5>
+            <div class="btns">
+                <a class="btn pink" [routerLink]="['../chooser']">another!</a>
+                <a class="btn teal" [routerLink]="['../']">back to quizle</a>
+            </div>
+        </div>
+    </div>
+</div>
