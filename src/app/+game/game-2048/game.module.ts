@@ -2,8 +2,6 @@
  * movie.module
  */
 
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
@@ -20,7 +18,7 @@ import { GameTileCellComponent } from './game-tile-cell';
 import { GameHeaderComponent } from './game-header';
 import { GameScoreComponent } from './game-score';
 import { GamePanelComponent } from './game-panel';
-import { GameAboutComponent, SocialBtnComponent } from './game-about';
+import { GameAboutComponent } from './game-about';
 import { MyHammerConfig } from './hammer.config';
 import { GameSharedModule } from '../shared';
 
@@ -32,7 +30,6 @@ import { GameSharedModule } from '../shared';
         GameScoreComponent,
         GamePanelComponent,
         GameAboutComponent,
-        SocialBtnComponent,
         GameGridCellComponent,
         GameTileCellComponent,
         GameOverBoardComponent,

@@ -4,9 +4,10 @@
 
 import { NgModule }      from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { CenterBtnComponent } from './center-btn';
+import { SocialBtnComponent } from './social-btn';
 
 @NgModule({
     imports: [
@@ -16,11 +17,13 @@ import { CenterBtnComponent } from './center-btn';
     ],
     declarations: [
         CenterBtnComponent,
+        SocialBtnComponent,
     ],
     exports: [
         CommonModule,
         FormsModule,
         CenterBtnComponent,
+        SocialBtnComponent,
     ],
     providers: []
 })

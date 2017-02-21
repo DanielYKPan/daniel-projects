@@ -3,8 +3,6 @@
  */
 
 import { NgModule }      from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { RouterModule } from '@angular/router';
 import { GameComponent } from './game.component';
@@ -13,12 +11,12 @@ import { GameBoardComponent } from './game-board';
 import { GameService, GameLevelService, tilesReducer } from './service';
 import { GameTileComponent } from './game-tile';
 import { GameTimerComponent } from './game-timer';
-import { GameAboutComponent, SocialBtnComponent } from './game-about';
+import { GameAboutComponent } from './game-about';
+import { GameSharedModule } from '../shared';
 
 @NgModule({
     imports: [
-        CommonModule,
-        FormsModule,
+        GameSharedModule,
         RouterModule.forChild(routes),
         StoreModule.provideStore({
             tiles: tilesReducer,
@@ -30,7 +28,6 @@ import { GameAboutComponent, SocialBtnComponent } from './game-about';
         GameTileComponent,
         GameTimerComponent,
         GameAboutComponent,
-        SocialBtnComponent
     ],
     exports: [],
     providers: [
