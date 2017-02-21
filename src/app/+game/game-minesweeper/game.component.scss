@@ -1,6 +1,7 @@
 @import '../../../styles/utils/variables';
 @import '../../../styles/utils/functions';
 @import '../../../styles/utils/mixins';
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Outline");
 
 .game-wrapper {
   display: flex;
@@ -8,6 +9,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #e0b97e;
+  font-family: 'Bungee', cursive, sans-serif;
 }
 
 .game-menu {
