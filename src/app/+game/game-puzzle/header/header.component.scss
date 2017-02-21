@@ -1,0 +1,61 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+.game-header {
+  position: relative;
+  width: 100%;
+  height: $base-line-height * 3;
+  background-color: #390b48;
+  color: $white;
+  overflow: hidden;
+}
+
+h1 {
+  @include type-setting(1);
+  margin: $base-line-height/2 1rem;
+
+  @include respond-to(medium) {
+    @include type-setting(3);
+    text-align: center;
+  }
+}
+
+nav {
+  @include type-setting(2);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  user-select: none;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #390b48;
+    height: 100%;
+    width: $base-line-height * 3;
+    transition: all 500ms ease;
+
+    svg {
+      width: 70%;
+      height: 70%;
+      fill: #B3C4D4;
+      transition: all 500ms ease;
+    }
+
+    &:hover {
+      background-color: #B3C4D4;
+
+      svg {
+        width: 70%;
+        height: 70%;
+        fill: #390b48;
+      }
+    }
+  }
+}

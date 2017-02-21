@@ -1,0 +1,57 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+:host {
+  flex: 1;
+  position: relative;
+}
+
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.board {
+  position: relative;
+  background-color: black;
+  box-shadow: 0px 0px 42px 13px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  transition: all 200ms ease;
+
+  &.won {
+    box-shadow: 0px 0px 42px 13px rgba(216, 204, 170, 0.75);
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  transition: all 1s ease-out;
+
+  &.over {
+    opacity: 1;
+  }
+
+  &.won {
+    opacity: 1;
+    transition: none;
+  }
+}
+
+label {
+  color: $white;
+  margin-top: $base-line-height/2;
+
+  input {
+    margin-right: 5px;
+  }
+}

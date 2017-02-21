@@ -1,0 +1,5 @@
+<div class="tile"
+     [ngStyle]="styles"
+     [ngClass]="{
+     'blank': tile.Blank,
+     'won': gameState.gameWon, 'showNumbers': showNumbers }"><span>{{tile.Value + 1}}</span></div>

@@ -111,6 +111,7 @@ $tile-width: 2rem;
     cursor: pointer;
     transform: scale(1);
     transition: transform 200ms ease;
+    text-transform: capitalize;
 
     &:hover {
       color: #d60a12;

@@ -1,0 +1,5 @@
+<div class="game-main">
+    <app-game-board [tiles]="tiles$ | async" [gameState]="gameState" (onClickTile)="moveTile($event)"></app-game-board>
+    <app-game-control (onShuffleBtnClick)="shuffleGame();"></app-game-control>
+    <app-game-gallery (onPhotoSelect)="selectPhoto($event)" [gameState]="gameState"></app-game-gallery>
+</div>

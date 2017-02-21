@@ -1,0 +1,15 @@
+<div class="board-wrapper">
+    <div #board class="board" [class.won]="gameState.gameWon">
+        <app-game-tile *ngFor="let tile of tiles; trackBy: trackByFn"
+                       [class.hide]="gameState.gameWon || gameState.gameOver"
+                       [tile]="tile" [gameState]="gameState" [showNumbers]="showNumbers"
+                       (click)="clickTile(tile)"></app-game-tile>
+        <div #background class="background"
+             [class.over]="gameState.gameOver"
+             [class.won]="gameState.gameWon"
+             [style.backgroundImage]="'url(/assets/img/game/puzzle/' + gameState.gameImage + ')'"></div>
+    </div>
+    <label>
+        <input type="checkbox" [(ngModel)]="showNumbers">Show numbers
+    </label>
+</div>

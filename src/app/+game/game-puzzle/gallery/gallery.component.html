@@ -1,0 +1,7 @@
+<div class="game-gallery">
+    <div class="photo-list">
+        <div class="photo" *ngFor="let photo of photos" (click)="onPhotoSelect.emit(photo)">
+            <img [class.selected]="photo == gameState.gameImage" src="/assets/img/game/puzzle/{{photo}}">
+        </div>
+    </div>
+</div>
