@@ -15,15 +15,15 @@ export class GameAboutComponent implements OnInit {
 
     public socialBtns: Array<{path: string, href: string}> = [
         {
-            path: '/assets/img/game/minesweeper/github.svg',
+            path: '/assets/img/game/social/github.svg',
             href: 'https://github.com/DanielYKPan'
         },
         {
-            path: '/assets/img/game/minesweeper/twitter.svg',
+            path: '/assets/img/game/social/twitter.svg',
             href: 'https://twitter.com/DanielYKPan'
         },
         {
-            path: '/assets/img/game/minesweeper/paper-plane.svg',
+            path: '/assets/img/game/social/paper-plane.svg',
             href: 'mailto:myron.yk.pan@gmail.com'
         },
     ];
