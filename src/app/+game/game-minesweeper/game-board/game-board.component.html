@@ -1,0 +1,44 @@
+<div class="game-board-wrapper">
+    <div class="game-inform game-control">
+        <div class="bum control-bum"
+             *ngFor="let level of levels"
+             [class.active]="chosenLevel.name == level.name"
+             (click)="changeGameLevel(level)">
+            <img src="/assets/img/game/minesweeper/bomb_{{level.name}}.png">
+            <h4>{{level.name}}</h4>
+        </div>
+    </div>
+    <div class="game-board">
+        <div class="grid {{chosenLevel.name}}">
+            <app-game-tile *ngFor="let tile of tiles$ | async; let i = index"
+                           [tile]="tile"
+                           (onRightClickTile)="clickTile($event, true)"
+                           (onClickTile)="clickTile($event)"></app-game-tile>
+        </div>
+    </div>
+    <div class="game-inform">
+        <div class="bum inform-bum">
+            <img src="/assets/img/game/minesweeper/bomb_fear.png">
+            <h3>{{chosenLevel.mines}}</h3>
+        </div>
+        <div class="bum inform-bum">
+            <img src="/assets/img/game/minesweeper/flag.png">
+            <h3>{{gameService.Status.flags}}</h3>
+        </div>
+        <div class="bum inform-bum timer-bum">
+            <img src="/assets/img/game/minesweeper/clock.png">
+            <h2>
+                <app-game-timer [start]="gameService.Status.gameStart"
+                                [over]="gameService.Status.gameOver"
+                                (onTimerStop)="setGameTime($event)"></app-game-timer>
+            </h2>
+        </div>
+        <div class="bum inform-bum best-bum">
+            <img src="/assets/img/game/minesweeper/best.png">
+            <div class="text">
+                <h5>best</h5>
+                <h5>{{gameService.Status.best}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

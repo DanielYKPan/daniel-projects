@@ -1,0 +1,22 @@
+<div class="game-wrapper">
+    <div class="game-menu">
+        <div class="game-menu-item">
+            <div class="button" (click)="newGame()">
+                <img src="/assets/img/game/minesweeper/bomb_green.png">
+                <span>New Game</span>
+            </div>
+        </div>
+        <div class="game-menu-item">
+            <div class="button" (click)="checkAbout()">
+                <img src="/assets/img/game/minesweeper/bomb_crown.png">
+                <span>Credits</span>
+            </div>
+        </div>
+    </div>
+    <div class="game-main">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="game-logo">
+        <img src="/assets/img/game/minesweeper/minesweeper_logo.png">
+    </div>
+</div>

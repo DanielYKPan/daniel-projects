@@ -10,6 +10,7 @@ export const routes = [
         children: [
             {path: '', component: GameCenterComponent},
             {path: '2048', loadChildren: './game-2048#GameModule'},
+            {path: 'minesweeper', loadChildren: './game-minesweeper#GameModule'},
         ]
     },
 ];
