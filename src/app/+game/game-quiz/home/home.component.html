@@ -7,7 +7,18 @@
         </div>
     </div>
     <app-game-home-achievements></app-game-home-achievements>
+    <div class="app-inform">
+        <div class="container">
+            <div class="social" *ngFor="let btn of socialBtns">
+                <app-game-about-social  [btn]="btn"></app-game-about-social>
+                <a [href]="btn.href" target="_blank">{{btn.caption}}</a>
+            </div>
+            <div class="text">
+                <h3>CONTACT THE DESIGNER</h3>
+            </div>
+        </div>
+    </div>
     <div class="center-btn" title="Back To Center">
-        <app-game-center-btn [color]="'#3055B6'"></app-game-center-btn>
+        <app-game-center-btn [color]="'#27D309'"></app-game-center-btn>
     </div>
 </div>
