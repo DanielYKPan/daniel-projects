@@ -16,7 +16,7 @@ export class GameAboutComponent implements OnInit {
     public socialBtns: Array<{path: string, href: string}> = [
         {
             path: '/assets/img/game/social/github.svg',
-            href: 'https://github.com/DanielYKPan'
+            href: 'https://github.com/DanielYKPan/ng2-minesweeper'
         },
         {
             path: '/assets/img/game/social/twitter.svg',
