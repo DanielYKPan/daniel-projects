@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-game-center',
     styleUrls: [
-        './game-center.component.scss'
+        'game-center.component.scss'
     ],
     templateUrl: 'game-center.component.html'
 })
@@ -36,7 +36,7 @@ export class GameCenterComponent implements OnInit {
             name: 'Puzzle',
             slug: 'puzzle',
             img: 'puzzle/puzzle-logo.png',
-            color: '#5506ff'
+            color: '#CC37FF'
         },
     ];
 

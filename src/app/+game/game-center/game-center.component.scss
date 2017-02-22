@@ -1,6 +1,6 @@
-@import '../../styles/utils/variables';
-@import '../../styles/utils/functions';
-@import '../../styles/utils/mixins';
+@import '../../../styles/utils/variables';
+@import '../../../styles/utils/functions';
+@import '../../../styles/utils/mixins';
 
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
@@ -21,27 +21,25 @@
   height: auto;
 }
 
-ul.game-menu {
+.game-menu {
   @include type-setting(3);
 
   @include respond-to(medium) {
     @include type-setting(4);
   }
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
   width: 90%;
   max-width: 500px;
   user-select: none;
   font-family: 'Baloo', cursive, sans-serif;
 }
 
-li.game {
+.game {
   display: flex;
   align-items: center;
   margin-bottom: $base-line-height;
 
-  img {
+  .logo {
     width: 10%;
     height: auto;
     margin-right: 1rem;

@@ -1,13 +1,13 @@
 <div class="wrapper">
     <img class="banner" src="assets/img/game/game-center-logo.png">
-    <ul class="game-menu">
-        <li class="game" *ngFor="let game of games">
-            <img class="image" src="assets/img/game/{{game.img}}">
+    <div class="game-menu">
+        <div class="game" *ngFor="let game of games">
+            <img class="logo" src="assets/img/game/{{game.img}}">
             <span class="name"
                   [ngStyle]="{'color': game.color}"
                   [routerLink]="[game.slug]">
                 {{game.name}}
             </span>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>

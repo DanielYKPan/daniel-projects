@@ -2,7 +2,7 @@
  * game.routes
  */
 
-import { GameCenterComponent } from './game-center.component';
+import { GameCenterComponent } from './game-center';
 
 export const routes = [
     {

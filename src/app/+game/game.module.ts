@@ -6,9 +6,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { routes } from './game.routes';
-import { GameCenterComponent } from './game-center.component';
+import { GameCenterComponent } from './game-center';
 
 @NgModule({
     declarations: [
