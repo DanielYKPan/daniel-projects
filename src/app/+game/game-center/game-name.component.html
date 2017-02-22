@@ -1,8 +1,11 @@
 <div class="game">
-    <img class="logo" src="assets/img/game/{{game.img}}">
+    <img class="logo" src="assets/img/game/{{game.img}}" [class.active]="gameActive">
     <span class="name"
+          [class.active]="gameActive"
           [ngStyle]="{'color': game.color}"
-          [routerLink]="[game.slug]">
+          [routerLink]="[game.slug]"
+          (mouseenter)="setActive(true)"
+          (mouseleave)="setActive(false)">
                 {{game.name}}
-            </span>
+    </span>
 </div>

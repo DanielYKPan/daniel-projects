@@ -9,11 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
     styleUrls: [
         'game-name.component.scss'
     ],
-    templateUrl: 'game-name.component.html'
+    templateUrl: 'game-name.component.html',
 })
 export class GameNameComponent implements OnInit {
 
     @Input() public game: any;
+
+    public gameActive: boolean = false;
 
     constructor() {
     }
@@ -21,4 +23,7 @@ export class GameNameComponent implements OnInit {
     public ngOnInit() {
     }
 
+    public setActive( active: boolean ): void {
+        this.gameActive = active;
+    }
 }

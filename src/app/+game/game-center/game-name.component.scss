@@ -9,12 +9,39 @@
   .logo {
     width: 10%;
     height: auto;
-    margin-right: 1rem;
-    cursor: pointer;
+    margin-right: 2rem;
+
+    &.active {
+      animation: Jump .5s infinite;
+    }
   }
 
   .name {
     font-weight: 800;
     cursor: pointer;
+    transition: transform 200ms ease;
+
+    &.active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@keyframes Jump {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  55%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(10px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }
