@@ -3,30 +3,76 @@
 @import '../../../../styles/utils/mixins';
 
 :host {
-  flex: 1;
   display: flex;
-  position: relative;
-  user-select: none;
+  justify-content: center;
+  color: $white;
+  width: 100%;
+  height: 100%;
+  background-color: #912fb1;
 }
 
 .about-wrapper {
   display: flex;
+  align-content: space-around;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 95%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #912fb1;
-  color: $mid-grey;
 }
 
-.game-about {
-  max-width: 600px;
-  margin: 1rem;
+.logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 
-  .strong {
-    font-weight: 700;
+  .logo-title {
+    @include type-setting(4);
+    margin: 0;
   }
+
+  .logo-img {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.about-body {
+  width: 95%;
+  margin: 0 auto;
+}
+
+p {
+  @include type-setting(0);
+
+  @include respond-to(medium) {
+    @include type-setting(1);
+  }
+  margin: 0;
+
+  &.strong {
+    @include type-setting(1);
+
+    @include respond-to(medium) {
+      @include type-setting(2);
+    }
+
+    font-weight: 600;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: $base-line-height 1rem;
+  width: 100%;
 }
