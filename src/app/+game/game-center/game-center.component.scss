@@ -33,21 +33,3 @@
   user-select: none;
   font-family: 'Baloo', cursive, sans-serif;
 }
-
-.game {
-  display: flex;
-  align-items: center;
-  margin-bottom: $base-line-height;
-
-  .logo {
-    width: 10%;
-    height: auto;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-
-  .name {
-    font-weight: 800;
-    cursor: pointer;
-  }
-}

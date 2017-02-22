@@ -1,0 +1,20 @@
+@import '../../../styles/utils/variables';
+
+.game {
+  display: flex;
+  align-items: center;
+  margin-bottom: $base-line-height;
+  width: 100%;
+
+  .logo {
+    width: 10%;
+    height: auto;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .name {
+    font-weight: 800;
+    cursor: pointer;
+  }
+}

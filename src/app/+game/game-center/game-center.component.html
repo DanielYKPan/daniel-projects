@@ -1,13 +1,6 @@
 <div class="wrapper">
     <img class="banner" src="assets/img/game/game-center-logo.png">
     <div class="game-menu">
-        <div class="game" *ngFor="let game of games">
-            <img class="logo" src="assets/img/game/{{game.img}}">
-            <span class="name"
-                  [ngStyle]="{'color': game.color}"
-                  [routerLink]="[game.slug]">
-                {{game.name}}
-            </span>
-        </div>
+        <app-game-name *ngFor="let game of games" [game]="game"></app-game-name>
     </div>
 </div>
