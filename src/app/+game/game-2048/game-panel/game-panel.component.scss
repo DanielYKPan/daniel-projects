@@ -30,18 +30,15 @@ $colors:  #EEE4DA, // 2
   @return $ret;
 }
 
-:host {
-  display: flex;
-  flex: 1;
-}
-
 .game-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #776E65;
-  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   overflow: auto;
 }
 

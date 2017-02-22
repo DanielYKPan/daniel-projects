@@ -1,10 +1,12 @@
 @import '../../../styles/utils/variables';
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Outline");
 
 :host {
   display: flex;
   flex-direction: column;
   flex: 1;
   background: $mid-grey resolve('img/game/2048/background-1.png') repeat;
+  font-family: "Bungee", cursive, sans-serif;
 }
 
 .center-btn {
