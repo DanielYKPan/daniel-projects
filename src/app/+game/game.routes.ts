@@ -13,6 +13,7 @@ export const routes = [
             {path: 'minesweeper', loadChildren: './game-minesweeper#GameModule'},
             {path: 'puzzle', loadChildren: './game-puzzle#GameModule'},
             {path: 'quiz', loadChildren: './game-quiz#GameModule'},
+            {path: 'memory', loadChildren: './game-memory#GameModule'},
         ]
     },
 ];

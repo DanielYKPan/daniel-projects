@@ -1,0 +1,8 @@
+@import '../../../styles/utils/variables';
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Outline");
+
+:host {
+  flex: 1;
+  background: $mid-grey resolve('img/game/memory/background.png') repeat;
+  font-family: "Bungee", cursive, sans-serif;
+}
