@@ -2,7 +2,7 @@
  * game.component
  */
 
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameService } from './service';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -10,7 +10,6 @@ import { Router, ActivatedRoute } from '@angular/router';
     selector: 'app-game-minesweeper',
     templateUrl: './game.component.html',
     styleUrls: ['./game.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
 export class GameComponent implements OnInit {
