@@ -38,6 +38,12 @@ export class GameCenterComponent implements OnInit {
             img: 'puzzle/puzzle-logo.png',
             color: '#CC37FF'
         },
+        {
+            name: 'Memory',
+            slug: 'memory',
+            img: 'memory/memory-logo.png',
+            color: '#D67096'
+        },
     ];
 
     constructor() {

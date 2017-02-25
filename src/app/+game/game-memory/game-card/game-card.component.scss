@@ -1,0 +1,56 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #FCFBE5;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #38393B;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: transform 600ms;
+
+  &.flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px #fff2ba;
+  }
+}
+
+.card-inner {
+  @include type-setting(2);
+
+  @include respond-to(medium) {
+    @include type-setting(4);
+  }
+
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.front {
+    color: #FCFBE5;
+    background: linear-gradient(45deg, #ce0996 0%, rgba(206, 9, 150, 0) 70%),
+    linear-gradient(135deg, #e74804 10%, rgba(231, 72, 4, 0) 80%),
+    linear-gradient(225deg, #e6af0a 10%, rgba(230, 175, 10, 0) 80%),
+    linear-gradient(315deg, #27fe01 100%, rgba(39, 254, 1, 0) 70%);
+    cursor: pointer;
+  }
+
+  &.back {
+    color: #9C1C11;
+    transform: rotateY(180deg);
+    background: #FCFBE5;
+    backface-visibility: hidden;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="game-wrapper">
+    <!--<div class="game-name" *ngIf="tiles && tiles.length === 0 ">memory</div>-->
+    <div #board class="board">
+        <div class="game-timer">
+            <app-game-memory-timer [time]="prepareTime"></app-game-memory-timer>
+        </div>
+        <div class="card"
+             [style.width]="tileWidth + 'px'"
+             [style.height]="tileHeight + 'px'"
+             [style.padding]="tilePadding + 'px'"
+             *ngFor="let tile of tiles$ | async; trackBy: trackByFn">
+            <app-game-memory-card [tile]="tile"
+                                  (onCardClick)="flipCard($event)"></app-game-memory-card>
+        </div>
+    </div>
+</div>
+<app-game-memory-state [moves]="gameStatic.moves"></app-game-memory-state>

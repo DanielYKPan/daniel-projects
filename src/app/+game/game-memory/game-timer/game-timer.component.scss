@@ -1,0 +1,9 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+.timer {
+  @include type-setting(5);
+  color: red;
+  opacity: 0;
+}
