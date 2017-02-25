@@ -8,3 +8,11 @@
   background: $mid-grey resolve('img/game/memory/background.png') repeat;
   font-family: "Bungee", cursive, sans-serif;
 }
+
+.center-btn {
+  position: fixed;
+  bottom: 70px;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+}
