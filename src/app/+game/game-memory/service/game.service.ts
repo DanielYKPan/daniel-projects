@@ -20,6 +20,7 @@ const types: string[] = [
 export class GameService {
 
     private tempTile: Tile = null;
+    private tempIds: string[] = [];
 
     constructor( private store: Store<any> ) {
     }
@@ -38,12 +39,17 @@ export class GameService {
     }
 
     public revealTile( tile: Tile ): boolean {
-        this.store.dispatch({type: FLIP_TILES, payload: {ids: [tile.Id], revealed: true}});
-        if (this.tempTile) {
-            return true;
+        if (tile.Revealed || this.tempIds.length >= 2) {
+            return false
         } else {
-            this.tempTile = tile;
-            return false;
+            this.tempIds.push(tile.Id);
+            this.store.dispatch({type: FLIP_TILES, payload: {ids: [tile.Id], revealed: true}});
+            if (this.tempTile) {
+                return true;
+            } else {
+                this.tempTile = tile;
+                return false;
+            }
         }
     }
 
@@ -60,12 +66,12 @@ export class GameService {
         if (this.tempTile.Content !== tile.Content) {
             this.store.dispatch({
                 type: FLIP_TILES,
-                payload: {ids: [tile.Id, this.tempTile.Id], revealed: false}
+                payload: {ids: this.tempIds, revealed: false}
             });
         } else {
             console.log('check game status');
         }
-        this.resetTempTile();
+        this.resetTemp();
     }
 
     public setGameState( gameState: GameState ): void {
@@ -79,9 +85,13 @@ export class GameService {
         });
     }
 
-    private resetTempTile(): void {
+    private resetTemp(): void {
         if (this.tempTile) {
             this.tempTile = null;
+        }
+
+        if(this.tempIds.length > 0) {
+            this.tempIds = [];
         }
     }
 }
