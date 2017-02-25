@@ -2,7 +2,7 @@
  * game-board.component
  */
 
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, AfterContentInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Tile, GameState, IGameStatic, GameService } from '../service';
 import { Observable, Subscription } from 'rxjs';
@@ -12,7 +12,7 @@ import { Observable, Subscription } from 'rxjs';
     templateUrl: 'game-board.component.html',
     styleUrls: ['game-board.component.scss'],
 })
-export class GameBoardComponent implements OnInit, AfterViewInit, OnDestroy {
+export class GameBoardComponent implements OnInit, AfterContentInit, OnDestroy {
 
     public prepareTime: string;
     public tiles$: Observable<Tile[]>;
@@ -21,7 +21,6 @@ export class GameBoardComponent implements OnInit, AfterViewInit, OnDestroy {
     public tilePadding: number;
     public gameStatic: IGameStatic;
 
-    @ViewChild('board') private board: ElementRef;
     private timeoutId: number = 0;
     private intervalId: number = 0;
     private selectGameStaticSub: Subscription;
@@ -43,9 +42,10 @@ export class GameBoardComponent implements OnInit, AfterViewInit, OnDestroy {
         );
     }
 
-    public ngAfterViewInit(): void {
-        let boardWidth = this.board.nativeElement.offsetWidth - 10;
-        this.tileWidth = boardWidth / 6;
+    public ngAfterContentInit(): void {
+        let boardWidth = window.innerWidth * 0.95;
+        let width = boardWidth > 720 ? 720 : boardWidth;
+        this.tileWidth = width / 6;
         this.tilePadding = this.tileWidth * 0.1 < 8 ? this.tileWidth * 0.1 : 8;
         this.tileHeight = this.tileWidth * 10 / 9;
     }
