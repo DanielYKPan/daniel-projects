@@ -85,7 +85,7 @@ export class GameBoardComponent implements OnInit, AfterViewInit, OnDestroy {
                 this.gameService.setGameState(GameState.Start);
                 this.gameService.flipAll(false);
             }
-        }, 1000);
+        }, 1300);
     }
 
     private clearTimer(): void {
