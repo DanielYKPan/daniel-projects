@@ -1,0 +1,26 @@
+<div class="about-wrapper">
+    <div class="logo">
+        <h1 class="logo-title">memory</h1>
+        <div class="logo-img">
+            <div class="card left">
+                <div class="card-inner front">
+                    <i class="icon icon-help"></i>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="card-inner front">
+                    <i class="icon icon-info"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-body">
+        <p>
+            A simple yet fun card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
+        </p>
+        <p><strong>Author:</strong> Daniel Pan</p>
+    </div>
+    <div class="social">
+        <app-game-about-social *ngFor="let btn of socialBtns" [btn]="btn"></app-game-about-social>
+    </div>
+</div>

@@ -14,6 +14,7 @@ import { GameService, tilesReducer, gameStaticReducer } from './service';
 import { GameCardComponent } from './game-card';
 import { GameStateComponent } from './game-state';
 import { GameTimerComponent } from './game-timer';
+import { GameAboutComponent } from './game-about';
 
 @NgModule({
     imports: [
@@ -31,6 +32,7 @@ import { GameTimerComponent } from './game-timer';
         GameCardComponent,
         GameStateComponent,
         GameTimerComponent,
+        GameAboutComponent,
     ],
     exports: [],
     providers: [
