@@ -44,6 +44,12 @@ export class GameCenterComponent implements OnInit {
             img: 'memory/memory-logo.png',
             color: '#D67096'
         },
+        {
+            name: 'Snake',
+            slug: 'snake',
+            img: 'snake/snake.png',
+            color: '#277600'
+        },
     ];
 
     constructor() {
