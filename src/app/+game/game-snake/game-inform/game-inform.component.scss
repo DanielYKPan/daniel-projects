@@ -1,0 +1,55 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+.game-inform {
+  width: 640px;
+}
+
+.game-score {
+  display: flex;
+  justify-content: space-around;
+
+  h1 {
+    @include type-setting(2);
+    margin: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.score-inform {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 32px;
+  height: 32px;
+  background-image: resolve('img/game/snake/snake-graphics.png');
+  background-size: 160px 128px;
+
+  &.Apple {
+    background-position: -0px -96px;
+  }
+
+  &.Grapes {
+    background-position: 0 -64px;
+  }
+
+  &.Pineapple {
+    background-position: -32px -64px;
+  }
+
+  &.Watermelon {
+    background-position: -32px -96px;
+  }
+
+  &.Orange {
+    background-position: -64px -96px;
+  }
+}

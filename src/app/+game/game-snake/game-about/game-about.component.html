@@ -1,0 +1,12 @@
+<div class="about-wrapper">
+    <div class="about-body">
+        <p>A Snake Game is an action game that consists of a snake that is constantly moving inside a grid. The player
+            controls the direction of the snake, but the snake always keeps moving. When the snake eats something, it
+            grows in size. If the snake touches the boundaries of the grid, or if it tries to eat its own tail, the
+            game is over. The goal of the game is to keep the snake alive as long as possible.</p>
+        <p><strong>Author:</strong> Daniel Pan</p>
+    </div>
+    <div class="social">
+        <app-game-about-social *ngFor="let btn of socialBtns" [btn]="btn"></app-game-about-social>
+    </div>
+</div>

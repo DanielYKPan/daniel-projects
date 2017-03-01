@@ -1,0 +1,12 @@
+<div class="game-inform">
+    <ul class="game-score">
+        <li class="score-inform" *ngFor="let type of fruits">
+            <span class="image {{type.name}}"></span>
+            <span>: {{type.score}}</span>
+        </li>
+    </ul>
+    <div class="game-score">
+        <h1>Scores: {{scores}}</h1>
+        <h1>Best: {{best}}</h1>
+    </div>
+</div>

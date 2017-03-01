@@ -1,0 +1,6 @@
+<canvas #board class="game-wrapper" width="640" height="480"
+        (window:keydown)="clickKeyBoard($event.keyCode)">
+</canvas>
+<app-game-inform [scores]="(gameState | async)?.scores"
+                 [best]="(gameState | async)?.best"
+                 [fruits]="fruits"></app-game-inform>

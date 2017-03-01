@@ -1,0 +1,41 @@
+@import '../../../../styles/utils/variables';
+@import '../../../../styles/utils/functions';
+@import '../../../../styles/utils/mixins';
+
+.game-header {
+  display: flex;
+  align-items: center;
+  width: 640px;
+  height: 20vh;
+  font-family: 'Russo One', cursive, sans-serif;
+
+  .game-logo {
+    width: 70%;
+    height: auto;
+  }
+}
+.game-links {
+  @include type-setting(2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 900;
+}
+
+.link {
+  transition: transform 100ms ease-in;
+  &:hover {
+    color: #333333;
+    transform: scale(1.2);
+  }
+
+  &.active {
+    @include type-setting(4);
+    background-image: linear-gradient(to bottom, #97cb72, #b5e7a9);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: scale(1);
+  }
+}

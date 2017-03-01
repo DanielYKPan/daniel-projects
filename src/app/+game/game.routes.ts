@@ -14,6 +14,7 @@ export const routes = [
             {path: 'puzzle', loadChildren: './game-puzzle#GameModule'},
             {path: 'quiz', loadChildren: './game-quiz#GameModule'},
             {path: 'memory', loadChildren: './game-memory#GameModule'},
+            {path: 'snake', loadChildren: './game-snake#GameModule'},
         ]
     },
 ];
