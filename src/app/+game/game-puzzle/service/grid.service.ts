@@ -7,6 +7,7 @@ import { Store } from '@ngrx/store';
 import { Tile, ICoordination } from './tile';
 import { STORE_TILES, MOVE_TILES } from './actions.const';
 import { IGameState } from './game-state.reducer';
+import { shuffle } from '../../shared';
 
 const Vectors = [{x: -1, y: 0}, {x: 1, y: 0}, {x: 0, y: -1}, {x: 0, y: 1}];
 
@@ -26,26 +27,6 @@ export const indexToCoordination = ( index: number, size: number ): ICoordinatio
 /* Change coordination to index */
 export const coordinationToIndex = ( coordination: ICoordination, size: number ): number => {
     return coordination.x + coordination.y * size;
-};
-
-// Random Shuffling An Array the Fisher-Yates (aka Knuth) Way
-const shuffle = ( list: Tile[] ): Tile[] => {
-    let currentIndex = list.length;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        let randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        let temporaryValue = list[currentIndex];
-        list[currentIndex] = list[randomIndex];
-        list[randomIndex] = temporaryValue;
-    }
-
-    return list;
 };
 
 /** Check if a puzzle is solvable */
@@ -140,7 +121,7 @@ export class GridService {
      * Shuffle the game grid
      * */
     private shuffleGameGrid(): void {
-        this._prepTiles = shuffle(this._prepTiles);
+        this._prepTiles = shuffle<Tile>(this._prepTiles);
         if (!isSolvable(this._prepTiles)) {
             this.shuffleGameGrid();
             return;

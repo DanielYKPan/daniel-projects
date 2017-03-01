@@ -10,6 +10,7 @@ import {
 } from './actions.const';
 import { Tile } from './tile';
 import { GameLevelService } from './game-level.service';
+import { shuffle } from '../../shared';
 
 const TraversalPaths = [
     {x: -1, y: -1},
@@ -43,26 +44,6 @@ const indexToCoordination = ( index: number, width: number ): {x: number; y: num
     return {x, y};
 };
 
-// Random Shuffling An Array the Fisher-Yates (aka Knuth) Way
-const shuffle = ( list: Tile[] ): Tile[] => {
-    let currentIndex = list.length;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        let randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        let temporaryValue = list[currentIndex];
-        list[currentIndex] = list[randomIndex];
-        list[randomIndex] = temporaryValue;
-    }
-
-    return list;
-};
-
 @Injectable()
 export class GameService {
 
@@ -86,7 +67,7 @@ export class GameService {
     public newGame(): void {
         this.resetGameStatus();
         let tiles = this.buildTileGrid();
-        tiles = shuffle(tiles);
+        tiles = shuffle<Tile>(tiles);
         tiles = this.setTilesContent(tiles);
         this.store.dispatch({type: STORE_TILES, payload: {tiles}});
     }

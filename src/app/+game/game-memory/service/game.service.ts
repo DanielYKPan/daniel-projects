@@ -40,7 +40,7 @@ export class GameService {
 
     public revealTile( tile: Tile ): boolean {
         if (tile.Revealed || this.tempIds.length >= 2) {
-            return false
+            return false;
         } else {
             this.tempIds.push(tile.Id);
             this.store.dispatch({type: FLIP_TILES, payload: {ids: [tile.Id], revealed: true}});
@@ -90,7 +90,7 @@ export class GameService {
             this.tempTile = null;
         }
 
-        if(this.tempIds.length > 0) {
+        if (this.tempIds.length > 0) {
             this.tempIds = [];
         }
     }

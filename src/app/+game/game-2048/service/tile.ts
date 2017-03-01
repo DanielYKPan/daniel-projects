@@ -1,8 +1,7 @@
 /**
  * tile
  */
-
-import { uuid } from './uuid';
+import { uuid } from '../../shared';
 
 export interface Coordination {
     x: number;
